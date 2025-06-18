@@ -128,7 +128,8 @@ const Footer: React.FC = () => {
                 <div>
                   <p className="text-gray-400">Phone & WhatsApp</p>
                   <a href="tel:+919626877940" className="text-white hover:text-blue-400 transition-colors">
-                    +91 96268 77940
+                                        +91 96268 77940 <br></br> +91 93633 38128 <br></br> +91 88384 67447
+
                   </a>
                 </div>
               </div>
