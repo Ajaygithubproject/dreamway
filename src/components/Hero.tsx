@@ -101,7 +101,8 @@ const Hero: React.FC = () => {
                 alt="International workforce"
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+              <div className="absolute -bottom-6 -left-6 bg-yellow-400 p-6 rounded-xl shadow-lg">
+
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-8 w-8 text-green-500" />
                   <div>
