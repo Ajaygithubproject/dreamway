@@ -119,6 +119,24 @@ const Header: React.FC = () => {
                   <Phone className="h-4 w-4" />
                   <span>+91 96268 77940</span>
                 </a>
+                </a>
+                 <a href="tel:+919363338128" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                  <Phone className="h-4 w-4" />
+                  <span>+91 93633 38128</span>
+                </a>
+                 <a href="tel:+918838467447" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                  <Phone className="h-4 w-4" />
+                  <span>+91 88384 67447</span>
+                </a>
+              </a>
+                 <a href="tel:+919363338128" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                  <Phone className="h-4 w-4" />
+                  <span>+91 93633 38128</span>
+                </a>
+                 <a href="tel:+918838467447" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                  <Phone className="h-4 w-4" />
+                  <span>+91 88384 67447</span>
+                </a>
                 <a href="mailto:careers.dreamway@gmail.com" className="flex items-center space-x-2 text-gray-600">
                   <Mail className="h-4 w-4" />
                   <span>careers.dreamwayconsultancy@gmail.com</span>
