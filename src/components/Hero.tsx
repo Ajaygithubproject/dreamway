@@ -1,5 +1,13 @@
 import React from 'react';
-import { ArrowRight, CheckCircle, Users, Globe, Award } from 'lucide-react';
+import {
+  ArrowRight,
+  CheckCircle,
+  Users,
+  Globe,
+  Award,
+  Phone,
+  MessageSquare
+} from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Hero: React.FC = () => {
@@ -14,7 +22,7 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden">
-      {/* Background Image */}
+      {/* Background */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
@@ -24,9 +32,9 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-700/80"></div>
       </div>
 
+      {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
           <div
             ref={elementRef}
             className={`text-white transform transition-all duration-1000 ${
@@ -37,14 +45,13 @@ const Hero: React.FC = () => {
               <Award className="h-6 w-6 text-yellow-400" />
               <span className="text-yellow-400 font-semibold">Trusted by 2,500+ Professionals</span>
             </div>
-            
+
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Your Dream Job
-              <span className="text-yellow-400"> Abroad</span>
+              Your Dream Job <span className="text-yellow-400">Abroad</span>
               <br />
               Starts Here
             </h1>
-            
+
             <p className="text-xl mb-8 text-gray-200 leading-relaxed">
               Dream Way Consultancy is your trusted partner for overseas employment. 
               We connect skilled professionals with verified employers across GCC, Europe, and Asia.
@@ -58,7 +65,7 @@ const Hero: React.FC = () => {
                 <span>Get Started Today</span>
                 <ArrowRight className="h-5 w-5" />
               </button>
-              
+
               <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-200">
                 View Success Stories
               </button>
@@ -66,23 +73,17 @@ const Hero: React.FC = () => {
 
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="flex items-center justify-center mb-2">
-                  <Users className="h-6 w-6 text-yellow-400" />
-                </div>
+                <Users className="h-6 w-6 text-yellow-400 mx-auto mb-2" />
                 <div className="text-2xl font-bold">2,500+</div>
                 <div className="text-sm text-gray-300">Successful Placements</div>
               </div>
               <div className="text-center">
-                <div className="flex items-center justify-center mb-2">
-                  <Globe className="h-6 w-6 text-yellow-400" />
-                </div>
+                <Globe className="h-6 w-6 text-yellow-400 mx-auto mb-2" />
                 <div className="text-2xl font-bold">15+</div>
                 <div className="text-sm text-gray-300">Countries</div>
               </div>
               <div className="text-center">
-                <div className="flex items-center justify-center mb-2">
-                  <CheckCircle className="h-6 w-6 text-yellow-400" />
-                </div>
+                <CheckCircle className="h-6 w-6 text-yellow-400 mx-auto mb-2" />
                 <div className="text-2xl font-bold">100%</div>
                 <div className="text-sm text-gray-300">Verified Jobs</div>
               </div>
@@ -101,8 +102,7 @@ const Hero: React.FC = () => {
                 alt="International workforce"
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-yellow-400 p-6 rounded-xl shadow-lg">
-
+              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-8 w-8 text-green-500" />
                   <div>
@@ -115,6 +115,24 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Fixed WhatsApp Icon (Left) */}
+      <a
+        href="https://wa.me/919626877940"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 left-4 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg animate-bounce hover:scale-110 transition"
+      >
+        <MessageSquare className="h-6 w-6" />
+      </a>
+
+      {/* Fixed Phone Icon (Right) */}
+      <a
+        href="tel:+919626877940"
+        className="fixed bottom-6 right-4 z-50 bg-blue-600 text-white p-3 rounded-full shadow-lg animate-bounce hover:scale-110 transition"
+      >
+        <Phone className="h-6 w-6" />
+      </a>
     </section>
   );
 };
