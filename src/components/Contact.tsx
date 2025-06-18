@@ -76,7 +76,8 @@ const Contact: React.FC = () => {
                     href="tel:+919626877940"
                     className="text-gray-600 hover:text-blue-600 transition-colors text-lg"
                   >
-                    +91 96268 77940
+                                       +91 96268 77940 <br></br> +91 93633 38128 <br></br> +91 88384 67447
+
                   </a>
                   <p className="text-gray-500 mt-1">Available 24/7 for urgent queries</p>
                 </div>
