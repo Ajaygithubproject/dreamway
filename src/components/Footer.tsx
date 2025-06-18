@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 import { 
   Globe, 
   Phone, 
@@ -31,13 +32,17 @@ const Footer: React.FC = () => {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-6">
-              <Globe className="h-8 w-8 text-blue-400" />
-              <div>
-                <h3 className="text-xl font-bold">Dream Way</h3>
-                <p className="text-sm text-gray-400">Consultancy</p>
-              </div>
+            <div className="flex items-center space-x-3">
+            <img src={logo} alt="Dream Way Logo" className="h-14 w-14 object-contain" />
+            <div>
+              <h1 className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+                Dream Way
+              </h1>
+              <p className="text-xs bg-gradient-to-r from-gray-500 to-gray-800 bg-clip-text text-transparent dark:from-gray-300 dark:to-gray-500">
+                Consultancy
+              </p>
             </div>
+          </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Your trusted partner for overseas employment. We connect skilled professionals 
               with verified employers across GCC, Europe, and Asia.
